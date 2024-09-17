@@ -188,6 +188,58 @@ ul li {
     text-decoration: underline;
 }
 
+/* Ajustes para telas menores */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .left-column, .right-column {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .project-container {
+        flex-direction: column;
+    }
+
+    .project {
+        width: 100%; /* Ocupa a largura total em telas pequenas */
+    }
+}
+
+@media (max-width: 480px) {
+    h2, h3 {
+        font-size: 1.2em;
+    }
+
+    .tab-button {
+        padding: 8px 15px;
+        font-size: 0.9em;
+    }
+
+    .project img {
+        height: 150px; /* Reduz a altura da imagem para dispositivos menores */
+    }
+
+    .tools img, .tools i {
+        width: 20px;
+        height: 20px;
+    }
+
+    .profile-picture img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media (max-width: 768px) {
+    .project-container {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
 
 
 
