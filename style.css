@@ -257,6 +257,20 @@ ul li {
     }
 }
 
+@media (max-width: 768px) {
+    .tools img {
+        width: 30px; /* Mesma largura dos ícones Font Awesome */
+        height: 30px; /* Altura proporcional */
+    }
+}
+
+@media (max-width: 480px) {
+    .tools img {
+        width: 25px; /* Tamanho menor para telas pequenas */
+        height: 25px;
+    }
+}
+
 
 
 
