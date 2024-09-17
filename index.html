@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil Profissional</title>
+    <!-- Atualizando o link do Font Awesome para uma versão mais estável -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-column">
+            <div class="profile-picture">
+                <img src="img/Foto.png" alt="Foto de Perfil">
+            </div>
+            <div class="info">
+                <h2>Matheus Rodrigues</h2>
+                <br><br>
+                <h3>Cientista de Dados | Automatização | Qlik Sense</h3>
+                <br>
+                <h3>Ferramentas</h3>
+                <div class="tools">
+                    <!-- Python em azul e amarelo -->
+                    <img src="img/python.png" alt="Python" width="25" height="25">
+                    
+                    <!-- SQL (base de dados) em cinza -->
+                    <i class="fas fa-database fa-2x" style="color: #4e73df;"></i>
+
+                    <!-- Excel em verde -->
+                    <i class="fas fa-file-excel fa-2x" style="color: #217346;"></i>
+
+                    <!-- Scikit-learn em laranja -->
+                    <img src="img/scikit-learn.png" alt="Scikit-learn" width="30" height="30">
+                </div>
+                <br><br>
+
+                <h3>Contatos</h3>
+                <div class="contacts">
+                    <ul>
+                        <li>
+                            <i class="fas fa-file-pdf"></i>
+                            <a href="link_do_cv.pdf" target="_blank">CV</a>
+                        </li>
+                        <li>
+                            <i class="fab fa-kaggle"></i>
+                            <a href="https://www.kaggle.com" target="_blank"> Kaggle</a>
+                        </li>
+                        <li>
+                            <i class="fab fa-github"></i>
+                            <a href="https://github.com" target="_blank">GitHub</a>
+                        </li>
+                        <li>
+                            <i class="fab fa-linkedin"></i>
+                            <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="right-column">
+            <div class="tabs">
+                <button id="sobre-tab" class="tab-button active">Sobre mim</button>
+                <button id="projetos-tab" class="tab-button">Projetos</button>
+                <button id="medium-tab" class="tab-button">Medium</button>
+                <button id="certificacoes-tab" class="tab-button">Certificações</button>
+            </div>
+            <div class="content">
+                <!-- Seção Sobre Mim -->
+                <div id="sobre-content" class="tab-content active">
+                    <h3>Sobre Mim</h2>
+                    <p>Olá, meu nome é Matheus Rodrigues, sou desenvolvedor web com experiência em desenvolvimento frontend e backend. Sou apaixonado por tecnologia e busco sempre me atualizar nas melhores práticas e frameworks modernos. Já trabalhei em diversos projetos de desenvolvimento de sites e aplicativos, ajudando empresas a criar soluções digitais eficientes e de alto desempenho.</p>
+                </div>
+
+                <!-- Seção Projetos -->
+                <div id="projetos-content" class="tab-content">
+                    <h3>Meus Projetos</h3>
+                    <div class="project-container">
+                        <div class="project">
+                            <img src="img/download.jpg" alt="Capa do Projeto 1">
+                            <div class="project-info">
+                                <h4>Projeto 1 - Aplicação Web para gestão de tarefas</h4>
+                                <p>Descrição breve sobre o projeto e suas funcionalidades.</p>
+                            </div>
+                        </div>
+                        <div class="project">
+                            <img src="img/download.png" alt="Capa do Projeto 2">
+                            <div class="project-info">
+                                <h4>Projeto 2 - E-commerce com React e Node.js</h4>
+                                <p>Descrição breve sobre o projeto e suas funcionalidades.</p>
+                            </div>
+                        </div>
+                        <div class="project">
+                            <img src="img/Image20220629154250.png" alt="Capa do Projeto 3">
+                            <div class="project-info">
+                                <h4>Projeto 3 - Blog em GatsbyJS</h4>
+                                <p>Descrição breve sobre o projeto e suas funcionalidades.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Seção Medium -->
+                <div id="medium-content" class="tab-content">
+                    <h3>Artigos no Medium</h3>
+                    <ul>
+                        <li>Artigo 1 - Como melhorar a performance de sites com lazy loading</li>
+                        <li>Artigo 2 - SEO para desenvolvedores: práticas essenciais</li>
+                        <li>Artigo 3 - Introdução a Progressive Web Apps (PWA)</li>
+                    </ul>
+                </div>
+
+                    <!-- Seção Certificações -->
+                <div id="certificacoes-content" class="tab-content">
+                    <h3>Minhas Certificações</h3>
+                    <ul>
+                        <li>Certificação 1 - Data Science Professional</li>
+                        <li>Certificação 2 - Machine Learning Specialist</li>
+                        <li>Certificação 3 - Full Stack Developer</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
