@@ -257,19 +257,28 @@ ul li {
     }
 }
 
+/* Definição geral para os ícones de imagem (Python, Scikit-learn) */
+.tools img {
+    width: 40px; /* Tamanho consistente com os ícones Font Awesome */
+    height: 40px;
+    object-fit: contain; /* Garante que a imagem mantenha sua proporção sem distorcer */
+}
+
+/* Ajustes para telas menores */
 @media (max-width: 768px) {
     .tools img {
-        width: 30px; /* Mesma largura dos ícones Font Awesome */
-        height: 30px; /* Altura proporcional */
+        width: 35px; /* Ajusta o tamanho para telas menores */
+        height: 35px;
     }
 }
 
 @media (max-width: 480px) {
     .tools img {
-        width: 25px; /* Tamanho menor para telas pequenas */
-        height: 25px;
+        width: 30px; /* Ajusta o tamanho para telas muito pequenas */
+        height: 30px;
     }
 }
+
 
 
 
