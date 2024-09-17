@@ -260,14 +260,14 @@ ul li {
 /* Estilos gerais para alinhar os ícones */
 .tools {
     display: flex;
-    gap: 15px; /* Espaçamento entre os ícones */
+    gap: 12px; /* Espaçamento entre os ícones */
     align-items: center; /* Alinha verticalmente ao centro */
 }
 
 /* Ajustes para ícones Font Awesome e imagens */
 .tools img, .tools i {
-    width: 30px; /* Tamanho padrão consistente para ícones */
-    height: 30px;
+    width: 25px; /* Tamanho padrão consistente para ícones */
+    height: 25px;
     display: block; /* Garante que eles se comportem de maneira consistente */
     margin: 0; /* Remove qualquer espaçamento extra */
 }
