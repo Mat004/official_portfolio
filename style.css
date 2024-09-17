@@ -264,14 +264,14 @@ ul li {
     align-items: center; /* Alinha verticalmente ao centro */
 }
 
-/* Ajustes para ícones Font Awesome e imagens */
+/* Ajustes para ícones Font Awesome e imagens 
 .tools img, .tools i {
-    width: 25px; /* Tamanho padrão consistente para ícones */
+    width: 25px; /* Tamanho padrão consistente para ícones 
     height: 25px;
-    display: block; /* Garante que eles se comportem de maneira consistente */
-    margin: 0; /* Remove qualquer espaçamento extra */
+    display: block; /* Garante que eles se comportem de maneira consistente 
+    margin: 0; /* Remove qualquer espaçamento extra 
 }
-
+*/
 /* Ajustes para telas menores */
 @media (max-width: 768px) {
     .tools img, .tools i {
@@ -286,7 +286,6 @@ ul li {
         height: 20px;
     }
 }
-
 
 
 
