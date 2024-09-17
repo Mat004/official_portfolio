@@ -257,25 +257,25 @@ ul li {
     }
 }
 
-/* Definição geral para os ícones de imagem (Python, Scikit-learn) */
+/* Ajuste direto para os ícones de imagem (Python, Scikit-learn) */
 .tools img {
-    width: 40px; /* Tamanho consistente com os ícones Font Awesome */
-    height: 40px;
-    object-fit: contain; /* Garante que a imagem mantenha sua proporção sem distorcer */
+    width: 40px !important;  /* Força o tamanho */
+    height: 40px !important;
+    object-fit: contain;     /* Mantém a proporção */
 }
 
-/* Ajustes para telas menores */
+/* Ajuste para telas menores */
 @media (max-width: 768px) {
     .tools img {
-        width: 35px; /* Ajusta o tamanho para telas menores */
-        height: 35px;
+        width: 35px !important; /* Força o tamanho em telas menores */
+        height: 35px !important;
     }
 }
 
 @media (max-width: 480px) {
     .tools img {
-        width: 30px; /* Ajusta o tamanho para telas muito pequenas */
-        height: 30px;
+        width: 30px !important; /* Força o tamanho em telas muito pequenas */
+        height: 30px !important;
     }
 }
 
