@@ -257,36 +257,36 @@ ul li {
     }
 }
 
-/* Estilos gerais para os ícones e as imagens */
+/* Estilos gerais para alinhar os ícones */
 .tools {
     display: flex;
-    gap: 20px; /* Espaçamento entre os ícones */
-    justify-content: flex-start; /* Alinhamento horizontal */
-    align-items: center; /* Alinhamento vertical centralizado */
+    gap: 15px; /* Espaçamento entre os ícones */
+    align-items: center; /* Alinha verticalmente ao centro */
 }
 
-/* Estilos específicos para imagens (Python, Scikit-learn) */
+/* Ajustes para ícones Font Awesome e imagens */
 .tools img, .tools i {
-    display: inline-block;
-    vertical-align: middle; /* Garante alinhamento vertical */
-    width: 40px; /* Tamanho uniforme */
-    height: 40px;
+    width: 30px; /* Tamanho padrão consistente para ícones */
+    height: 30px;
+    display: block; /* Garante que eles se comportem de maneira consistente */
+    margin: 0; /* Remove qualquer espaçamento extra */
 }
 
 /* Ajustes para telas menores */
 @media (max-width: 768px) {
     .tools img, .tools i {
-        width: 35px;
-        height: 35px;
+        width: 25px;
+        height: 25px;
     }
 }
 
 @media (max-width: 480px) {
     .tools img, .tools i {
-        width: 30px;
-        height: 30px;
+        width: 20px;
+        height: 20px;
     }
 }
+
 
 
 
