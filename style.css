@@ -257,27 +257,37 @@ ul li {
     }
 }
 
-/* Ajuste direto para os ícones de imagem (Python, Scikit-learn) */
-.tools img {
-    width: 40px !important;  /* Força o tamanho */
-    height: 40px !important;
-    object-fit: contain;     /* Mantém a proporção */
+/* Estilos gerais para os ícones e as imagens */
+.tools {
+    display: flex;
+    gap: 20px; /* Espaçamento entre os ícones */
+    justify-content: flex-start; /* Alinhamento horizontal */
+    align-items: center; /* Alinhamento vertical centralizado */
 }
 
-/* Ajuste para telas menores */
+/* Estilos específicos para imagens (Python, Scikit-learn) */
+.tools img, .tools i {
+    display: inline-block;
+    vertical-align: middle; /* Garante alinhamento vertical */
+    width: 40px; /* Tamanho uniforme */
+    height: 40px;
+}
+
+/* Ajustes para telas menores */
 @media (max-width: 768px) {
-    .tools img {
-        width: 35px !important; /* Força o tamanho em telas menores */
-        height: 35px !important;
+    .tools img, .tools i {
+        width: 35px;
+        height: 35px;
     }
 }
 
 @media (max-width: 480px) {
-    .tools img {
-        width: 30px !important; /* Força o tamanho em telas muito pequenas */
-        height: 30px !important;
+    .tools img, .tools i {
+        width: 30px;
+        height: 30px;
     }
 }
+
 
 
 
