@@ -188,57 +188,75 @@ ul li {
     text-decoration: underline;
 }
 
-/* Ajustes para telas menores */
+/* Ajustes gerais para telas menores */
 @media (max-width: 768px) {
     .container {
-        flex-direction: column;
+        flex-direction: column; /* Empilha as colunas em telas pequenas */
+        padding: 10px; /* Reduz o padding */
     }
 
     .left-column, .right-column {
-        width: 100%;
+        width: 100%; /* Colunas ocupam toda a largura da tela */
         padding: 10px;
     }
 
-    .project-container {
-        flex-direction: column;
+    .profile-picture img {
+        width: 120px;
+        height: 120px; /* Reduz o tamanho da imagem de perfil */
+        margin-bottom: 20px;
     }
 
-    .project {
-        width: 100%; /* Ocupa a largura total em telas pequenas */
-    }
-}
-
-@media (max-width: 480px) {
-    h2, h3 {
-        font-size: 1.2em;
+    /* Ajustes nas abas */
+    .tabs {
+        flex-direction: column; /* Abas empilhadas em vez de lado a lado */
     }
 
     .tab-button {
-        padding: 8px 15px;
-        font-size: 0.9em;
+        margin-bottom: 10px; /* Espaço entre as abas */
+        width: 100%; /* Abas ocupam 100% da largura */
+        font-size: 0.9em; /* Ajuste no tamanho da fonte */
+    }
+
+    /* Projetos se ajustam ao tamanho da tela */
+    .project-container {
+        flex-direction: column;
+        gap: 10px; /* Espaço menor entre os projetos */
+    }
+
+    .project {
+        width: 100%; /* Cada projeto ocupa toda a largura da tela */
     }
 
     .project img {
-        height: 150px; /* Reduz a altura da imagem para dispositivos menores */
+        height: auto; /* Ajusta a altura das imagens proporcionalmente */
     }
+}
 
-    .tools img, .tools i {
-        width: 20px;
-        height: 20px;
+/* Ajustes para telas muito pequenas (ex: celulares) */
+@media (max-width: 480px) {
+    h2, h3 {
+        font-size: 1.2em; /* Reduz tamanho das fontes */
     }
 
     .profile-picture img {
         width: 100px;
-        height: 100px;
+        height: 100px; /* Imagem de perfil menor */
+    }
+
+    .tools img, .tools i {
+        width: 20px;
+        height: 20px; /* Reduz tamanho dos ícones */
+    }
+
+    .project img {
+        height: 150px; /* Limita altura das imagens de projeto */
+    }
+
+    .contacts a {
+        font-size: 10px; /* Tamanho de fonte menor para contatos */
     }
 }
 
-@media (max-width: 768px) {
-    .project-container {
-        display: flex;
-        flex-direction: column;
-    }
-}
 
 
 
