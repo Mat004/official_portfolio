@@ -59,6 +59,7 @@ body {
     border-radius: 5px;
     color: #c9d1d9; /* Texto claro para contraste */
     transition: background-color 0.3s ease;
+    font-size: 1.2em;
 }
 
 .tab-button.active {
@@ -287,7 +288,6 @@ ul li {
         height: 22px;
     }
 }
-
 
 
 
