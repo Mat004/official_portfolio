@@ -294,7 +294,7 @@ ul li {
 
 /* Definindo o estilo padrão dos links */
 .content ul li a {
-    color: white; /* Define a cor do texto como branco */
+    color: rgb(228, 226, 226); /* Define a cor do texto como branco */
     text-decoration: none; /* Remove o sublinhado padrão */
     transition: transform 0.3s ease, color 0.3s ease; /* Adiciona uma transição suave */
 }
