@@ -95,11 +95,12 @@ ul li {
 .project-container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between; /* Espaço entre os projetos */
     gap: 20px; /* Espaço entre os projetos */
 }
 
 .project {
-    width: calc(33.333% - 20px); /* Três projetos por linha, com espaço para o gap */
+    width: calc(32% - 20px); /* Três projetos por linha, com espaço para o gap */
     background-color: #20262d; /* Fundo escuro para destacar o projeto */
     border-radius: 8px;
     overflow: hidden;
@@ -118,15 +119,17 @@ ul li {
 }
 
 .project-info {
-    padding: 15px;
+    padding: 10px;
 }
 
 .project-info h4 {
     margin-bottom: 10px;
+    color: #ffffff; /* Cor desejada para o nome do projeto */
 }
 
 .project-info p {
     margin: 0;
+    color: #c2c4c7; /* Cor branca levemente escura */
 }
 
 .tools {
@@ -289,7 +292,31 @@ ul li {
     }
 }
 
+/* Definindo o estilo padrão dos links */
+.content ul li a {
+    color: white; /* Define a cor do texto como branco */
+    text-decoration: none; /* Remove o sublinhado padrão */
+    transition: transform 0.3s ease, color 0.3s ease; /* Adiciona uma transição suave */
+}
 
+/* Efeito de zoom e mudança de cor ao passar o mouse */
+.content ul li a:hover {
+    transform: scale(1.05); /* Aumenta o tamanho do link em 5% */
+    color: #ffcc00; /* Altera a cor do texto ao passar o mouse */
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    opacity: 0.8; /* Efeito de hover, opcional */
+}
+
+.experiencia {
+    color: #ffffff; /* Define a cor branca */
+}
 
 
 
