@@ -3,174 +3,287 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Matheus Rodrigues</title>
-    <!-- Atualizando o link do Font Awesome para uma versão mais estável -->
+    <title>Matheus Rodrigues — Data Scientist</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Outfit:wght@400;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
-
 </head>
 <body>
+
+    <!-- Animated background grid -->
+    <div class="bg-grid"></div>
+    <div class="bg-glow"></div>
+
     <div class="container">
-        <div class="left-column">
-            <div class="profile-picture">
-                <img src="img/Foto.png" alt="Foto de Perfil">
+
+        <!-- LEFT COLUMN -->
+        <aside class="left-column">
+            <div class="profile-wrap">
+                <div class="profile-ring">
+                    <img src="img/Foto.png" alt="Matheus Rodrigues">
+                </div>
+                <div class="status-dot"></div>
             </div>
-            <div class="info">
-                <h2>Matheus Souza Rodrigues</h2>
-                <br><br>
-                <h3>Cientista de Dados | Automatização | Qlik Sense</h3>
-                <br>
-                <h3>Ferramentas</h3>
+
+            <div class="name-block">
+                <h1>Matheus<br>Rodrigues</h1>
+                <div class="title-tag">
+                    <span class="bracket">[</span>
+                    Data Scientist
+                    <span class="bracket">]</span>
+                </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="info-section">
+                <p class="section-label">// stack</p>
                 <div class="tools">
-                    <!-- Python em azul e amarelo -->
-                    <img src="img/python.png" alt="Python" width="33" height="33">
-                    
-                    <!-- SQL (base de dados) em cinza -->
-                    <i class="fas fa-database fa-2x" style="color: #4e73df;"></i>
-
-                    <!-- Excel em verde -->
-                    <i class="fas fa-file-excel fa-2x" style="color: #217346;"></i>
-
-                    <!-- Git -->
-                    <i class="fab fa-git-alt fa-2x" style="color: #da4f0f;"></i>
-
-                    <!-- Scikit-learn em laranja -->
-                    <img src="img/scikit-learn.png" alt="Scikit-learn" width="39" height="39">
-                </div>
-                <br><br>
-
-                <h3>Contatos</h3>
-                <div class="contacts">
-                    <ul>
-                        <li>
-                            <i class="fas fa-file-pdf"></i>
-                            <a href="https://drive.google.com/file/d/1WN-RNMEoA1O6y718lSMoz20fNtcA6Dgo/view?usp=sharing" target="_blank">CV</a>
-                        </li>
-                        <li>
-                            <i class="fab fa-kaggle"></i>
-                            <a href="https://www.kaggle.com/matheussr004" target="_blank"> Kaggle</a>
-                        </li>
-                        <li>
-                            <i class="fab fa-github"></i>
-                            <a href="https://github.com/Mat004" target="_blank">GitHub</a>
-                        </li>
-                        <li>
-                            <i class="fab fa-linkedin"></i>
-                            <a href="https://www.linkedin.com/in/matheus-msrodrigues/" target="_blank">LinkedIn</a>
-                        </li>
-                    </ul>
+                    <div class="tool-item" title="Python">
+                        <img src="img/python.png" alt="Python">
+                        <span>Python</span>
+                    </div>
+                    <div class="tool-item" title="SQL">
+                        <i class="fas fa-database" style="color: #4e73df;"></i>
+                        <span>SQL</span>
+                    </div>
+                    <div class="tool-item" title="Excel">
+                        <i class="fas fa-file-excel" style="color: #217346;"></i>
+                        <span>Excel</span>
+                    </div>
+                    <div class="tool-item" title="Git">
+                        <i class="fab fa-git-alt" style="color: #f05032;"></i>
+                        <span>Git</span>
+                    </div>
+                    <div class="tool-item" title="Scikit-learn">
+                        <img src="img/scikit-learn.png" alt="Scikit-learn">
+                        <span>Sklearn</span>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="right-column">
+
+            <div class="divider"></div>
+
+            <div class="info-section">
+                <p class="section-label">// contato</p>
+                <nav class="contacts">
+                    <a href="https://drive.google.com/file/d/1WN-RNMEoA1O6y718lSMoz20fNtcA6Dgo/view?usp=sharing" target="_blank" class="contact-link">
+                        <i class="fas fa-file-pdf"></i>
+                        <span>Currículo</span>
+                        <i class="fas fa-arrow-right arrow"></i>
+                    </a>
+                    <a href="https://www.kaggle.com/matheussr004" target="_blank" class="contact-link">
+                        <i class="fab fa-kaggle"></i>
+                        <span>Kaggle</span>
+                        <i class="fas fa-arrow-right arrow"></i>
+                    </a>
+                    <a href="https://github.com/Mat004" target="_blank" class="contact-link">
+                        <i class="fab fa-github"></i>
+                        <span>GitHub</span>
+                        <i class="fas fa-arrow-right arrow"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/matheus-msrodrigues/" target="_blank" class="contact-link">
+                        <i class="fab fa-linkedin"></i>
+                        <span>LinkedIn</span>
+                        <i class="fas fa-arrow-right arrow"></i>
+                    </a>
+                </nav>
+            </div>
+        </aside>
+
+        <!-- RIGHT COLUMN -->
+        <main class="right-column">
             <div class="tabs">
-                <button id="sobre-tab" class="tab-button active">Sobre mim</button>
-                <button id="projetos-tab" class="tab-button">Projetos</button>
-                <button id="medium-tab" class="tab-button">Medium</button>
-                <button id="certificacoes-tab" class="tab-button">Certificações</button>
+                <button id="sobre-tab" class="tab-button active" data-tab="sobre">
+                    <span class="tab-num">01</span> Sobre
+                </button>
+                <button id="projetos-tab" class="tab-button" data-tab="projetos">
+                    <span class="tab-num">02</span> Projetos
+                </button>
+                <button id="medium-tab" class="tab-button" data-tab="medium">
+                    <span class="tab-num">03</span> Medium
+                </button>
+                <button id="certificacoes-tab" class="tab-button" data-tab="certificacoes">
+                    <span class="tab-num">04</span> Certs
+                </button>
             </div>
+
             <div class="content">
-                <!-- Seção Sobre Mim -->
+
+                <!-- SOBRE -->
                 <div id="sobre-content" class="tab-content active">
-                    <span class="experiencia"><p align='justify'><b>Cientista de Dados com 4 anos de experiência focado em Inteligência 
-                        de Mercado, Planejamento Comercial e Automação.</b></p><br></span>
-                    <p align='justify'>Sou pós-graduando em Ciência de Dados pela <b>Data Science Academy</b> tenho 
-                        formação em Engenharia Metalúrgica pela <b>Universidade Federal do Ceará</b> e sou 
-                        apaixonado por dados e tecnologia. Minha experiência abrange a transformação de grandes 
-                        volumes de dados em informações estratégicas que orientam decisões de negócios.</p><br>
-                    <p align='justify'>Tenho sólida experiência em aplicar técnicas de Ciência de Dados para 
-                        melhorar a eficiência de processos, automatizar tarefas e fornecer insights valiosos. 
-                        Entre minhas especialidades estão a análise de performance comercial, avaliando métricas 
-                        por canal de vendas, região e produto, além de identificar oportunidades de melhoria na 
-                        operação.</p><br>
-                    <p align='justify'>Possuo conhecimentos avançados em modelagem preditiva, estatística e 
-                        machine learning, aplicados para prever tendências de mercado e maximizar o desempenho 
-                        comercial.</p><br>
-                    <p align='justify'>Estou sempre em busca de otimizar processos com automação e aprimorar 
-                        minhas habilidades em modelagem de dados, análise estatística e visualização para 
-                        impulsionar resultados estratégicos.</p><br>
-                </div>
+                    <div class="sobre-header">
+                        <p class="intro-label">// sobre mim</p>
+                        <h2 class="section-title">Transformando dados<br>em <span class="highlight">decisões estratégicas</span></h2>
+                    </div>
 
-                <!-- Seção Projetos -->
-                <div id="projetos-content" class="tab-content">
-                    <div class="project-container">
-                        <!-- Projeto 4 -->
-                        <div class="project">
-                            <a href="https://github.com/Mat004/Rossmann_Store_Sale/blob/master/README.md" target="_blank" style="text-decoration: none; color: inherit;">    
-                                <img src="img/rossmann.jpg" alt="Capa do Projeto 1">
-                                <div class="project-info">
-                                    <h4>Rossmann Store Predict</h4>
-                                    <p><i>Neste projeto, foi realizado uma análise exploratória do conjunto de dados de vendas no 
-                                        varejo das lojas Rossmann e a construção de um modelo preditivo para prever as vendas de 
-                                        qualquer loja Rossmann para qualquer data.</i></p>
-                                </div>
-                            </a>
+                    <div class="stats-row">
+                        <div class="stat-card">
+                            <span class="stat-num">4+</span>
+                            <span class="stat-label">anos de experiência</span>
                         </div>
+                        <div class="stat-card">
+                            <span class="stat-num">4</span>
+                            <span class="stat-label">projetos publicados</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-num">2</span>
+                            <span class="stat-label">artigos no Medium</span>
+                        </div>
+                    </div>
 
-                        <!-- Projeto 3 -->
-                        <div class="project">
-                            <a href="https://github.com/Mat004/sql_banco_dados/blob/master/README.md" target="_blank" style="text-decoration: none; color: inherit;">    
-                                <img src="img/sql_olist.jpg" alt="Capa do Projeto 1">
-                                <div class="project-info">
-                                    <h4><b>EDA com SQL - Olist</b></h4>
-                                    <p><i>O objetivo desse projeto foi fazer uma Análise Exploratória de 
-                                        Dados a partir dos dados disponibilizados pela Olist no Kaggle.</i></p>
-                                </div>
-                            </a>
-                        </div>
-
-                        <!-- Projeto 2 -->
-                        <div class="project">
-                            <a href="https://github.com/Mat004/Web-Scraping-Star-Jeans/blob/main/README.md" target="_blank" style="text-decoration: none; color: inherit;">    
-                                <img src="img/star_jeans.jpg" alt="Capa do Projeto 2">
-                                <div class="project-info">
-                                    <h4>Web scraping - Star Jeans</h4>
-                                    <p><i>Utilizando ferramentas de web scraping, foi realizado a extração de 
-                                        informações de duas concorrentes da Star Jeans, focando no produto de 
-                                        entrada: Calças jeans masculinas.</i></p>
-                                </div>
-                            </a>
-                        </div>
-
-                        <!-- Projeto 1 -->
-                        <div class="project">
-                            <a href="https://github.com/Mat004/house_rocket_new/blob/main/README.md" target="_blank" style="text-decoration: none; color: inherit;">    
-                                <img src="img/house_rocket.jpg" alt="Capa do Projeto 3">
-                                <div class="project-info">
-                                    <h4>EDA - House Rockets</h4>
-                                    <p><i>A partir de uma base de dados de imóveis, foi realizado uma análise 
-                                        exploratória dos dados a fim de identificar osimóveis que estavam abaixo 
-                                        do preço médio de venda, para aquisição e definição de qual preço para 
-                                        revenda e em qual período vender o imóvel.</i></p>
-                                </div>
-                            </a>
-                        </div>
+                    <div class="about-text">
+                        <p><strong class="white">Cientista de Dados com 4 anos de experiência</strong> focado em Inteligência de Mercado, Planejamento Comercial e Automação.</p>
+                        <p>Pós-graduando em Ciência de Dados pela <strong class="accent">Data Science Academy</strong>, com formação em Engenharia Metalúrgica pela <strong class="accent">Universidade Federal do Ceará</strong>. Apaixonado por transformar grandes volumes de dados em informações estratégicas que orientam decisões de negócios.</p>
+                        <p>Tenho sólida experiência em análise de performance comercial, avaliando métricas por canal de vendas, região e produto, além de identificar oportunidades de melhoria na operação.</p>
+                        <p>Possuo conhecimentos avançados em <strong class="white">modelagem preditiva, estatística e machine learning</strong>, aplicados para prever tendências de mercado e maximizar o desempenho comercial.</p>
                     </div>
                 </div>
 
-                <!-- Seção Medium -->
-                <div id="medium-content" class="tab-content">
-                    <span class='experiencia'><h3>Artigos no Medium</h3></span>
-                    <ul>
-                        <li><a href="https://medium.com/@matheussouza004/acessando-uma-planilha-do-google-sheets-usando-python-dc243d9803c3" target="_blank">1. Acessando uma planilha do Planilhas Google usando Python</a></li>
-                        <li><a href="https://medium.com/@matheussouza004/como-fazer-seu-planejamento-para-solucionar-seu-problema-de-negócio-e02ed6e5a5bf" target="_blank">2. Como fazer seu planejamento para solucionar seu problema de negócio?</a></li>
-                    </ul>
+                <!-- PROJETOS -->
+                <div id="projetos-content" class="tab-content">
+                    <p class="intro-label">// projetos</p>
+                    <h2 class="section-title">Trabalhos em <span class="highlight">destaque</span></h2>
+
+                    <div class="project-container">
+                        <a href="https://github.com/Mat004/Rossmann_Store_Sale/blob/master/README.md" target="_blank" class="project">
+                            <div class="project-img-wrap">
+                                <img src="img/rossmann.jpg" alt="Rossmann Store Predict">
+                                <div class="project-overlay">
+                                    <span>Ver projeto <i class="fas fa-arrow-right"></i></span>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <div class="project-tags">
+                                    <span class="tag">ML</span>
+                                    <span class="tag">Previsão</span>
+                                </div>
+                                <h4>Rossmann Store Predict</h4>
+                                <p>Análise exploratória e modelo preditivo para prever as vendas de qualquer loja Rossmann para qualquer data.</p>
+                            </div>
+                        </a>
+
+                        <a href="https://github.com/Mat004/sql_banco_dados/blob/master/README.md" target="_blank" class="project">
+                            <div class="project-img-wrap">
+                                <img src="img/sql_olist.jpg" alt="EDA com SQL - Olist">
+                                <div class="project-overlay">
+                                    <span>Ver projeto <i class="fas fa-arrow-right"></i></span>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <div class="project-tags">
+                                    <span class="tag">SQL</span>
+                                    <span class="tag">EDA</span>
+                                </div>
+                                <h4>EDA com SQL — Olist</h4>
+                                <p>Análise Exploratória de Dados a partir dos dados disponibilizados pela Olist no Kaggle.</p>
+                            </div>
+                        </a>
+
+                        <a href="https://github.com/Mat004/Web-Scraping-Star-Jeans/blob/main/README.md" target="_blank" class="project">
+                            <div class="project-img-wrap">
+                                <img src="img/star_jeans.jpg" alt="Star Jeans Webscraping">
+                                <div class="project-overlay">
+                                    <span>Ver projeto <i class="fas fa-arrow-right"></i></span>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <div class="project-tags">
+                                    <span class="tag">Web Scraping</span>
+                                    <span class="tag">Python</span>
+                                </div>
+                                <h4>Web Scraping — Star Jeans</h4>
+                                <p>Extração de dados de concorrentes focando no produto de entrada: calças jeans masculinas.</p>
+                            </div>
+                        </a>
+
+                        <a href="https://github.com/Mat004/house_rocket_new/blob/main/README.md" target="_blank" class="project">
+                            <div class="project-img-wrap">
+                                <img src="img/house_rocket.jpg" alt="House Rockets EDA">
+                                <div class="project-overlay">
+                                    <span>Ver projeto <i class="fas fa-arrow-right"></i></span>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <div class="project-tags">
+                                    <span class="tag">EDA</span>
+                                    <span class="tag">Insights</span>
+                                </div>
+                                <h4>EDA — House Rockets</h4>
+                                <p>Análise exploratória para identificar imóveis abaixo do preço médio e definir estratégias de revenda.</p>
+                            </div>
+                        </a>
+                    </div>
                 </div>
 
-                    <!-- Seção Certificações -->
-                <div id="certificacoes-content" class="tab-content">
-                    <span class='experiencia'><h3>Minhas Certificações</h3></span>
-                    <ul>
-                        <li><a href="https://drive.google.com/file/d/1_Utxcq-nTTYVevNs87A2HOZevvOZ6am_/view" target="_blank">1. Ambiente Virtual para Cientistas de Dados</a></li>
-                        <li><a href="https://drive.google.com/file/d/1wRR4JYXRsVpXNEz_kcucpNAWI8__-rev/view" target="_blank">2. SQL do Básico ao Avançado</a></li>
-                        <li><a href="https://drive.google.com/file/d/1UkqucibJ_xuP0nStCJL3g7qulLj5XNXZ/view" target="_blank">3. Git para Cientistas de Dados</a></li>
-                        <li><a href="https://drive.google.com/file/d/1tfc0-NrXq1_vslOXmBM1LzPxXxmmbdyQ/view" target="_blank">4. Ciência de Dados em Produção</a></li>
-                    </ul>
+                <!-- MEDIUM -->
+                <div id="medium-content" class="tab-content">
+                    <p class="intro-label">// escrita</p>
+                    <h2 class="section-title">Artigos no <span class="highlight">Medium</span></h2>
+
+                    <div class="articles-list">
+                        <a href="https://medium.com/@matheussouza004/acessando-uma-planilha-do-google-sheets-usando-python-dc243d9803c3" target="_blank" class="article-card">
+                            <div class="article-num">01</div>
+                            <div class="article-body">
+                                <h4>Acessando uma planilha do Google Sheets usando Python</h4>
+                                <p>Guia prático para integrar o Python com o Google Sheets via API.</p>
+                            </div>
+                            <i class="fas fa-arrow-right article-arrow"></i>
+                        </a>
+
+                        <a href="https://medium.com/@matheussouza004/como-fazer-seu-planejamento-para-solucionar-seu-problema-de-negócio-e02ed6e5a5bf" target="_blank" class="article-card">
+                            <div class="article-num">02</div>
+                            <div class="article-body">
+                                <h4>Como fazer seu planejamento para solucionar seu problema de negócio?</h4>
+                                <p>Framework para estruturar soluções de dados orientadas ao negócio.</p>
+                            </div>
+                            <i class="fas fa-arrow-right article-arrow"></i>
+                        </a>
+                    </div>
                 </div>
+
+                <!-- CERTIFICAÇÕES -->
+                <div id="certificacoes-content" class="tab-content">
+                    <p class="intro-label">// formação</p>
+                    <h2 class="section-title">Minhas <span class="highlight">Certificações</span></h2>
+
+                    <div class="certs-list">
+                        <a href="https://drive.google.com/file/d/1_Utxcq-nTTYVevNs87A2HOZevvOZ6am_/view" target="_blank" class="cert-card">
+                            <div class="cert-icon"><i class="fas fa-certificate"></i></div>
+                            <div class="cert-body">
+                                <h4>Ambiente Virtual para Cientistas de Dados</h4>
+                            </div>
+                            <i class="fas fa-external-link-alt cert-link"></i>
+                        </a>
+                        <a href="https://drive.google.com/file/d/1wRR4JYXRsVpXNEz_kcucpNAWI8__-rev/view" target="_blank" class="cert-card">
+                            <div class="cert-icon"><i class="fas fa-certificate"></i></div>
+                            <div class="cert-body">
+                                <h4>SQL do Básico ao Avançado</h4>
+                            </div>
+                            <i class="fas fa-external-link-alt cert-link"></i>
+                        </a>
+                        <a href="https://drive.google.com/file/d/1UkqucibJ_xuP0nStCJL3g7qulLj5XNXZ/view" target="_blank" class="cert-card">
+                            <div class="cert-icon"><i class="fas fa-certificate"></i></div>
+                            <div class="cert-body">
+                                <h4>Git para Cientistas de Dados</h4>
+                            </div>
+                            <i class="fas fa-external-link-alt cert-link"></i>
+                        </a>
+                        <a href="https://drive.google.com/file/d/1tfc0-NrXq1_vslOXmBM1LzPxXxmmbdyQ/view" target="_blank" class="cert-card">
+                            <div class="cert-icon"><i class="fas fa-certificate"></i></div>
+                            <div class="cert-body">
+                                <h4>Ciência de Dados em Produção</h4>
+                            </div>
+                            <i class="fas fa-external-link-alt cert-link"></i>
+                        </a>
+                    </div>
+                </div>
+
             </div>
-        </div>
+        </main>
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>
